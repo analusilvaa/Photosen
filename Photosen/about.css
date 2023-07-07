@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Josefin Sans';
+    color: grey;
+    list-style: none;
+}
+
+body{
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover{
+    color: #20c997;
+}
+
+header>h3{
+    color: white;
+    font-size: 26px;
+}
+
+#svgdiv{
+    fill: grey;
+    transition: 0.3s;
+}
+
+#svgdiv:hover #svgdiv>svg{
+    fill: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+header>ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+#svgdiv{
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    fill:grey;
+}
+
+#drop{
+    position: relative;
+}
+
+#dropdown{
+    position: absolute;
+    background-color: white;
+    width: 130%;
+    height:1200%;
+    text-align: center;
+    top: 170%;
+    opacity: 0;
+    z-index: -99;
+}
+
+#drop:hover #dropdown{
+    opacity: 100;
+    z-index: 99;
+}
+
+#dropdown>li{
+    padding-top: 6.5%;
+}
+
+.myservices 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.myservices h2
+{
+    text-align: center;
+    font-size: 62px;
+    letter-spacing: 2px;
+    margin: 90px 0 60px 0;
+    color: white;
+}
+
+.servicesconteiner svg
+{
+    fill: #20c997;
+    margin: 0 0 24px;
+    width: 20%;
+    height: 20%;
+    transition: 0.3s;
+}
+
+.servicesconteiner span
+{
+    overflow: hidden;
+}
+
+.servicesconteiner svg:hover
+{
+    scale: 120%;
+}
+
+.servicesconteiner
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+}
+
+.servicesconteiner>div
+{
+    flex: 0 0 calc(31% - 10px);
+    overflow: hidden;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #262626;
+    text-align: center;
+    height: 60vh;
+    padding: 48px;
+}
+
+.servicesconteiner p:nth-of-type(1)
+{
+    color: #777;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.servicesconteiner p:nth-of-type(2)
+{
+    color: #20c997;
+    font-weight: 900;
+}
+
+.servicesconteiner h3
+{
+    font-size: 25px;
+}
+
+.conteinerabout 
+{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 0 0 0 15px;
+    justify-content: space-between;
+}
+
+.conteinerabout>img
+{
+    filter: saturate(0);
+    transition: 0.3s;
+    flex-basis: 10%;
+    
+}
+
+.conteinerabout img:hover
+{
+    filter: saturate(1);
+    filter: brightness(100%);
+    transform: scale(1.02);
+    filter: brightness(80%);
+    flex-basis: 10%;
+}
+
+.conteinerabout div:nth-of-type(2)
+{
+    width: 30%;
+    margin: 0px 0px 0px 112px;
+    padding: 0 15px;
+}
+
+.conteinerabout h3
+{
+    font-size: 28px;
+    text-align: left;
+}
+
+.conteinerabout p
+{
+    color: #777777;
+    margin: 0 0 16px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+.personsconteiner
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    margin: 0 15px;
+    padding: 80px 0;
+}
+
+.personsconteiner div
+{
+    width: 30%;
+    height: 472px;
+    margin: 0 0 48px;
+    padding: 0 15px;
+}
+
+.personsconteiner img
+{
+    border-radius: 100%;
+    filter: saturate(0);
+    transition: 0.3s;
+    width: 60%;
+    margin: 0 0 24px;
+}
+
+.personsconteiner img:hover
+{
+    filter: saturate(1);
+    filter: brightness(100%);
+    transform: scale(1.01);
+    filter: brightness(80%);
+}
+
+.personsconteiner p
+{
+    text-align: center;
+    margin: 35px 0 24px;
+    color: #777777;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+.personsconteiner svg
+{
+    fill: #20c997;
+    width: 15%;
+    margin: 0 0 16px;
+}
+
+.personsconteiner svg:hover
+{
+    fill: #20c997;
+    filter: brightness(70%);
+}
+
+.footer
+{
+    width: 100%;
+    text-align: center;
+    color: #777;
+    font-weight: 600;
+    padding: 24px 0;
+}
+
+.footer p
+{
+    margin: 0 0 16px;
+    font-size: 16px;
+}
+
+.footer svg
+{
+    fill: #777;
+}
+
+.footer a
+{
+    color: #20c997;
+    text-decoration: none;
+}
+
+.footer a:hover
+{
+    color: #20c997;
+    filter: brightness(70%);
+}
+
+
+#mymission>h3{
+    color: white;
+}
+
